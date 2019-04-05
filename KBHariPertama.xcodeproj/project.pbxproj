@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D2C3605A275B1A76EE6A873 /* Pods_KBHariPertama.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4EB9BA3CC3A03622331CB21 /* Pods_KBHariPertama.framework */; };
 		F501000B224F43E8004B4FED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F501000A224F43E8004B4FED /* AppDelegate.swift */; };
 		F501000D224F43E8004B4FED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F501000C224F43E8004B4FED /* ViewController.swift */; };
 		F5010010224F43E8004B4FED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F501000E224F43E8004B4FED /* Main.storyboard */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		307E6CC0BF98DDCA326AA0E0 /* Pods-KBHariPertama.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KBHariPertama.debug.xcconfig"; path = "Target Support Files/Pods-KBHariPertama/Pods-KBHariPertama.debug.xcconfig"; sourceTree = "<group>"; };
+		D9669961B517855D839B0617 /* Pods-KBHariPertama.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KBHariPertama.release.xcconfig"; path = "Target Support Files/Pods-KBHariPertama/Pods-KBHariPertama.release.xcconfig"; sourceTree = "<group>"; };
+		E4EB9BA3CC3A03622331CB21 /* Pods_KBHariPertama.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KBHariPertama.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5010007224F43E8004B4FED /* KBHariPertama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KBHariPertama.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F501000A224F43E8004B4FED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F501000C224F43E8004B4FED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -31,12 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D2C3605A275B1A76EE6A873 /* Pods_KBHariPertama.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		45D45639990BF7B56351D5FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4EB9BA3CC3A03622331CB21 /* Pods_KBHariPertama.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		58D77C534B2C49FF5880E114 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				307E6CC0BF98DDCA326AA0E0 /* Pods-KBHariPertama.debug.xcconfig */,
+				D9669961B517855D839B0617 /* Pods-KBHariPertama.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F5010008224F43E8004B4FED /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +86,8 @@
 			children = (
 				F5010009224F43E8004B4FED /* KBHariPertama */,
 				F5010008224F43E8004B4FED /* Products */,
+				58D77C534B2C49FF5880E114 /* Pods */,
+				45D45639990BF7B56351D5FB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F501001C224F43EA004B4FED /* Build configuration list for PBXNativeTarget "KBHariPertama" */;
 			buildPhases = (
+				FCF14A37E1D4A99D70F342A1 /* [CP] Check Pods Manifest.lock */,
 				F5010003224F43E8004B4FED /* Sources */,
 				F5010004224F43E8004B4FED /* Frameworks */,
 				F5010005224F43E8004B4FED /* Resources */,
+				259361D8F30A30B4DCE95465 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +158,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		259361D8F30A30B4DCE95465 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KBHariPertama/Pods-KBHariPertama-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KBHariPertama/Pods-KBHariPertama-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCF14A37E1D4A99D70F342A1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KBHariPertama-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F5010003224F43E8004B4FED /* Sources */ = {
@@ -284,11 +357,13 @@
 		};
 		F501001D224F43EA004B4FED /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 307E6CC0BF98DDCA326AA0E0 /* Pods-KBHariPertama.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6K5XA7BH4G;
 				INFOPLIST_FILE = KBHariPertama/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,11 +377,13 @@
 		};
 		F501001E224F43EA004B4FED /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9669961B517855D839B0617 /* Pods-KBHariPertama.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6K5XA7BH4G;
 				INFOPLIST_FILE = KBHariPertama/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
